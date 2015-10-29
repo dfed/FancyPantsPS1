@@ -75,7 +75,7 @@ cd fancypantsps1
 ```
 ####Or add the following into your ~/.bash_profile:
 ```bash
- source <path_to_fancypants>/fancypants_ps1_bashrc
+ source <path_to_fancypants>/fancypants_sharedrc && source <path_to_fancypants>/fancypants_ps1_bashrc
  export GIT_GEMS_PS1_SHOWUNTRACKEDFILES=true #set to false to speed up your prompt when in large repos
 ```
 ###Zsh
@@ -87,6 +87,6 @@ cd fancypantsps1
 ```
 ####Or add the following into your ~/Development/config_files/zsh/prompt.zsh:
 ```zsh
-source <path_to_fancypants>/fancypants_ps1_zshprompt
+source <path_to_fancypants>/fancypants_sharedrc && source <path_to_fancypants>/fancypants_ps1_zshprompt
 export GIT_GEMS_PS1_SHOWUNTRACKEDFILES=true #set to false to speed up your prompt when in large repos
 ```
