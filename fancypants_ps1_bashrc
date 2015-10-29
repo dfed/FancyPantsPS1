@@ -1,0 +1,7 @@
+function set_ps1_with_git_gem {
+  set_colored_git_gem "\[$COLOR_GREEN\]" "\[$COLOR_YELLOW\]" "\[$COLOR_RED\]"
+  PS1="\[${COLOR_LIGHT_GRAY}\]\w\[${COLOR_LIGHT_CYAN}\]\$(parse_git_branch_with_indicator)$COLORED_GIT_GEM\[${COLOR_LIGHT_PURPLE}\]$(parse_git_pair_author_with_indicator)\[${COLOR_NC}\] "
+}
+
+# PS1 is set inside set_ps1_with_git_gem in order to properly escape the colors.
+PROMPT_COMMAND=set_ps1_with_git_gem
