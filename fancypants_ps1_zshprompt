@@ -1,6 +1,6 @@
 function set_ps1_with_git_gem {
   set_colored_git_gem "%{$fg_bold[green]%}" "%{$fg_bold[yellow]%}" "%{$fg_bold[red]%}"
-  echo "${PR_CYAN}$(parse_git_branch_with_indicator)$COLORED_GIT_GEM%{$reset_color%}"
+  echo "%{$fg_bold[cyan]%}$(parse_git_branch_with_indicator)$COLORED_GIT_GEM%{$reset_color%}"
 }
 
 export PS1='${SSH_CONNECTION+"%{$fg_bold[cyan]%}%n@%m:"}%{$fg_bold[green]%}%~%{$reset_color%}$(set_ps1_with_git_gem):%? '
