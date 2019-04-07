@@ -8,7 +8,7 @@ export FP_COLOR_LIGHT_PURPLE='\e[1;35m'
 
 function set_ps1_with_git_gem {
   set_colored_git_gem "\[$FP_COLOR_GREEN\]" "\[$FP_COLOR_YELLOW\]" "\[$FP_COLOR_RED\]"
-  PS1="\[${FP_COLOR_LIGHT_GRAY}\]\w\[${FP_COLOR_LIGHT_CYAN}\]\$(parse_git_branch_with_indicator)$COLORED_GIT_GEM\[${FP_COLOR_LIGHT_PURPLE}\]$(parse_git_pair_author_with_indicator)\[${FP_COLOR_NC}\] "
+  PS1="\[${FP_COLOR_LIGHT_GRAY}\]\w\[${FP_COLOR_LIGHT_CYAN}\]\$(parse_git_branch_with_indicator)$COLORED_GIT_GEM\[${FP_COLOR_NC}\] "
 }
 
 # PS1 is set inside set_ps1_with_git_gem in order to properly escape the colors.

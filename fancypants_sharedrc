@@ -4,29 +4,6 @@ function parse_git_branch_with_indicator {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ \1/" -e 's/(detached from \(.*\))/\1/'
 }
 
-function parse_git_pair_author_with_indicator {
-  if ( git rev-parse --git-dir > /dev/null 2>&1 ); then # We are in a git repo
-    local pairAuthor=""
-    if [ -n "$(git config --get user.email)" ]; then
-        pairAuthor="$(git config --get user.email)"
-    elif [ -n "$GIT_COMMITTER_EMAIL" ]; then
-      pairAuthor="$GIT_COMMITTER_EMAIL"
-    elif [ -n "$GIT_AUTHOR_EMAIL" ]; then
-      pairAuthor="$GIT_AUTHOR_EMAIL"
-    elif [ -n "$EMAIL" ]; then
-      pairAuthor="$EMAIL"
-    else
-      pairAuthor=""
-    fi
-
-    pairAuthor=$(echo $pairAuthor | sed -e 's/@.*//' -e 's/^/+/' -e 's/$/+/' -e 's/^+git\+/+/' -e "s/+$USER\+/+/" -e 's/+$//' -e 's/\+/ \+/g')
-
-    if [ -n "$pairAuthor" ]; then
-      echo "$pairAuthor"
-    fi
-  fi
-}
-
 export GIT_GEMS_PS1_SHOWUNTRACKEDFILES=false # Don't show a gem for untracked files. Looking for untracked files causes 200% slowdown, which is a problem in large repositories.
 function set_colored_git_gem() {
   # $1 is escaped go color.
