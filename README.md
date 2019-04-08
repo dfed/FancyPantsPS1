@@ -4,8 +4,8 @@ FancyPantsPS1
 
 <table>
   <tr>
-    <td><font color="#808080">~/Development/fancypantsps1</font> <font color="#3090C7">master</font> <font color="#7D0000E">+dfed</font> <font color="#CCCC00" size="3">*</font></td>
-    <td>You’re pairing with dfed on branch master, and you have unstaged files.</td>
+    <td><font color="#808080">~/Development/fancypantsps1</font> <font color="#3090C7">master</font> <font color="#CCCC00" size="3">*</font></td>
+    <td>You’re on branch master, and you have unstaged files.</td>
   </tr>
   <tr>
     <td><font color="#808080">~/Development/fancypantsps1</font> <font color="#3090C7">dfed/test</font> <font color="#DF0000" size="3">*</font></td>
@@ -23,11 +23,6 @@ FancyPantsPS1
 
 ####Full git status feature breakdown
 <table>
-  <tr>
-	<td><font color="#7D0000E">purple</font></td>
-    <td><font color="#7D0000E">+pair_committer</font></td>
-    <td>You are currently pair committing with this person. Works with both the pair command and CoderPicker.</td>
-  </tr>
   <tr>
     <td><font color="#DF0000">red</font></td>
     <td><font color="#DF0000" size="5">*</font></td>
