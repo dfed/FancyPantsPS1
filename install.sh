@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 if [ -e "$HOME/.bash_profile" ]; then
   bash_profile_absolute="$HOME/.bash_profile"

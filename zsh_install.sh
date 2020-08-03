@@ -1,4 +1,5 @@
 #!/bin/zsh
+set -e
 
 if [ -e "$HOME/.aliases" ]; then
   zsh_profile_absolute="$HOME/.aliases"
