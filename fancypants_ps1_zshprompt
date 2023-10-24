@@ -5,4 +5,4 @@ function set_ps1_with_git_gem {
 
 autoload -U colors && colors
 setopt prompt_subst
-export PS1='%~$(set_ps1_with_git_gem) '
+export PS1='%(?..%F{red})%~$(set_ps1_with_git_gem) '
