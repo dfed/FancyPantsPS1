@@ -1,6 +1,6 @@
 FancyPantsPS1
 ====
-##Stylize your prompt.
+## Stylize your prompt.
 
 <table>
   <tr>
@@ -21,7 +21,7 @@ FancyPantsPS1
   </tr>
 </table>  
 
-####Full git status feature breakdown
+#### Full git status feature breakdown
 <table>
   <tr>
     <td><font color="#DF0000">red</font></td>
@@ -60,27 +60,27 @@ FancyPantsPS1
   </tr>
 </table>
 
-##Installation instructions
-###Bash
-####Run the following to install:
+## Installation instructions
+### Bash
+#### Run the following to install:
 ```bash
 git clone git@github.com:dfed/FancyPantsPS1.git
 cd fancypantsps1
 . ./install.sh
 ```
-####Or add the following into your ~/.bash_profile:
+#### Or add the following into your ~/.bash_profile:
 ```bash
  source <path_to_fancypants>/fancypants_sharedrc && source <path_to_fancypants>/fancypants_ps1_bashrc
  export GIT_GEMS_PS1_SHOWUNTRACKEDFILES=true #set to false to speed up your prompt when in large repos
 ```
-###Zsh
-####Run the following to install:
+### Zsh
+#### Run the following to install:
 ```zsh
 git clone git@github.com:dfed/FancyPantsPS1.git
 cd fancypantsps1
 . ./zsh_install.sh
 ```
-####Or add the following into your ~/Development/config_files/zsh/prompt.zsh:
+#### Or add the following into your ~/Development/config_files/zsh/prompt.zsh:
 ```zsh
 source <path_to_fancypants>/fancypants_sharedrc && source <path_to_fancypants>/fancypants_ps1_zshprompt
 export GIT_GEMS_PS1_SHOWUNTRACKEDFILES=true #set to false to speed up your prompt when in large repos
